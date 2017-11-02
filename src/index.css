@@ -1,0 +1,49 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+code,
+pre {
+  background: ghostwhite;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  font-size: calc(1rem - 1px);
+}
+
+table {
+  border: 2px solid ghostwhite;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: ghostwhite;
+}
+
+td {
+  padding: 0.5rem;
+  border: 2px solid ghostwhite;
+}

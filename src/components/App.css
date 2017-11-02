@@ -1,0 +1,53 @@
+.App {
+  width: 48rem;
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.App__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 3rem;
+  margin: 3rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.App__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 1rem 0;
+}
+
+.App__title {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.App__subtitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.App__logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.App__info {
+  padding: 1rem;
+  background-color: ghostwhite;
+}
+
+.App__instructions {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
