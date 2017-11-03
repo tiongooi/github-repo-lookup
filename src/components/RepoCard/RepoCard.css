@@ -1,0 +1,20 @@
+p {
+  line-height: 7px;
+}
+
+p:nth-child(1) {
+  font-size: 20px;
+}
+
+p:nth-child(2) {
+  font-size: 14px;
+  color: grey;
+}
+
+p:nth-child(3) {
+  font-size: 14px;
+}
+
+.content {
+  margin-left: 40px;
+}
