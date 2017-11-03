@@ -13,9 +13,6 @@
 .content {
   width: 320px;
   margin-left: 45px;
-  /*overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;*/
 }
 
 p:nth-child(1) {
