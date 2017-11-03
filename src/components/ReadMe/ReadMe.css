@@ -1,9 +1,12 @@
-.App {
+/*.App {
   width: 48rem;
   margin: auto;
-  padding: 1rem;
+  padding: 0px;
   box-sizing: border-box;
   background-color: red;
+}*/
+.read-me > p {
+  line-height: 17px;
 }
 
 .App__header {

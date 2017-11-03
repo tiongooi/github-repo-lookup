@@ -4,7 +4,7 @@ import './ReadMe.css'
 
 const ReadMe = (props) => {
   return(
-    <div className="App">
+    <div className='read-me'>
       <header className="App__header">
         <img className="App__logo" alt="Bilue" src={logo} />
         <div className="App__titles">

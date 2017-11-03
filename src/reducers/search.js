@@ -1,9 +1,11 @@
 import {
   SEARCH,
   SEARCH_SUCCESS,
+  SEARCH_SUCCESS_NO_RESULT,
   SEARCH_FAIL,
   UPDATE_INPUT,
   CLEAR_INPUT,
+  CLEAR_MESSAGE,
 } from '../actions/search'
 
 const initialState = {
@@ -21,14 +23,20 @@ const searchReducer = ( state = initialState, action ) => {
     case SEARCH_SUCCESS:
       return { ...state, isFetching: false, data: action.payload }
 
+    case SEARCH_SUCCESS_NO_RESULT:
+      return { ...state, isFetching: false, message: action.payload, }
+
     case SEARCH_FAIL:
-      return { ...state, isFetching: false, data: action.payload }
+      return { ...state, isFetching: false, message: action.payload }
 
     case UPDATE_INPUT:
       return { ...state, input: action.payload }
 
     case CLEAR_INPUT:
       return { ...state, input: '' }
+
+    case CLEAR_MESSAGE:
+      return { ...state, message:'' }
 
     default: return state
   }

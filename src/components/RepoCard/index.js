@@ -1,18 +1,24 @@
 import React from 'react'
 import Paper from 'material-ui/Paper'
-import './RepoCard.css'
 import FolderIcon from 'material-ui/svg-icons/file/folder-shared'
+import DownloadIcon from 'material-ui/svg-icons/file/file-download'
+import FlatButton from 'material-ui/FlatButton'
+import './RepoCard.css'
 
 const RepoCard = (props) => {
   const { repo } = props
   return(
     <Paper style={styles.paper}>
-      <FolderIcon style={{width:'40px',height:'40px'}} />
+      <FolderIcon color='#9C27B0' style={{width:'50px',height:'50px',marginLeft:'15px'}} />
       <div className='content'>
-        <p><strong>{repo.name}</strong></p>
+        <p>{repo.name}</p>
         <p>{repo.full_name}</p>
         <p>By: <strong>{repo.owner.login}</strong></p>
       </div>
+      <FlatButton
+        icon={<DownloadIcon color='grey' style={{width:'25px',height:'25px'}} />}
+        onClick={()=>alert('coming soon')}
+       />
     </Paper>
   )
 }
@@ -26,7 +32,7 @@ const styles = {
     paddingLeft: '20px',
     paddingRight: '20px',
     margin: '10px',
-    width: '400px',
+    width: '550px',
   }
 }
 
