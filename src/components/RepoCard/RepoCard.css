@@ -1,9 +1,21 @@
 .content > p {
-  line-height: 7px;
+  line-height: 100%;
+  text-overflow: ellipsis;
+  display: block;
+  width: 300px;
+  height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .content {
   width: 320px;
+  margin-left: 45px;
+  /*overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;*/
 }
 
 p:nth-child(1) {
@@ -14,12 +26,9 @@ p:nth-child(1) {
 p:nth-child(2) {
   font-size: 14px;
   color: grey;
+  margin-top: 15px;
 }
 
 p:nth-child(3) {
   font-size: 14px;
-}
-
-.content {
-  margin-left: 45px;
 }

@@ -24,6 +24,9 @@ export default class GithubSearch extends Component {
     super(props)
     this.handleUpdateSearch = this.handleUpdateSearch.bind(this)
     this.clearPageMessage = this.clearPageMessage.bind(this)
+    this.state = {
+      searchError: '',
+    }
   }
 
   handleUpdateSearch(e,v) {
@@ -31,7 +34,12 @@ export default class GithubSearch extends Component {
   }
 
   handleSearch({ searchValue: query }) {
-    this.props.getRepo(query)
+    if (query.length === 0) {
+      this.setState({ searchError: 'Field can not be left blank'})
+    } else {
+      this.setState({ searchError: '' })
+      this.props.getRepo(query)
+    }
   }
 
   clearPageMessage() {
@@ -47,6 +55,7 @@ export default class GithubSearch extends Component {
             onChange={this.handleUpdateSearch}
             value={this.props.searchValue}
             style={{marginLeft: '50px'}}
+            errorText={this.state.searchError}
            />
            <FlatButton
              icon={<SearchIcon />}

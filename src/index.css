@@ -7,8 +7,9 @@ body,
   padding: 0;
   border: 0;
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: -apple-system, Roboto, 'Segoe UI', BlinkMacSystemFont,
     'Helvetica Neue', Arial, sans-serif;
+    /*font-family: Roboto;*/
   color: #333;
 }
 
